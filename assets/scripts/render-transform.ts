@@ -21,6 +21,9 @@ export class render_transform extends Component {
     @property(Texture2D)
     pivot: Texture2D | null = null;
 
+    @property(Texture2D)
+    background: Texture2D | null = null;
+
     private _translateImage: Image | null = null;
     private _rotateImage: Image | null = null;
     private _rotateImage2: Image | null = null;
@@ -42,67 +45,68 @@ export class render_transform extends Component {
         canvasLayout.horizontalAlignment = HorizontalAlignment.STRETCH;
         canvasLayout.verticalAlignment = VerticalAlignment.STRETCH;
 
+        const background = new Image();
+        background.source = new UIBrush(this.background);
+        const backgroundLayout = canvas.addChild(background);
+        backgroundLayout.anchors = Anchors.BOTH_STRETCH;
+        backgroundLayout.offsets = new Thickness();
+        backgroundLayout.pivot = new Vec2(0.5, 0.5);
+
         const noTransform = new Image();
         noTransform.source = new UIBrush(this.noTransform);
         const noTransformLayout = canvas.addChild(noTransform);
-        noTransformLayout.anchors = Anchors.CENTER_CENTER;
-        noTransformLayout.offsets = new Thickness(0, 0, this.noTransform.width / 2, this.noTransform.height / 2);
+        noTransformLayout.anchors = new Anchors(0.5, 0.33, 0.5, 0.33);
+        noTransformLayout.useAutoSize = true;
         noTransformLayout.pivot = new Vec2(0.5, 0.5);
 
         const pivot = this._pivotImage = new Image();
         pivot.source = new UIBrush(this.pivot);
         const pivotLayout = canvas.addChild(pivot);
-        pivotLayout.anchors = Anchors.CENTER_CENTER;
-        pivotLayout.offsets = new Thickness(0, 200, this.pivot.width / 2, this.pivot.height / 2);
+        pivotLayout.anchors = new Anchors(0.5, 0.66, 0.5, 0.66);
+        pivotLayout.useAutoSize = true;
         pivotLayout.pivot = new Vec2(0.5, 0.5);
         pivot.renderTransform.origin = new Vec2();
 
         const translateImage = this._translateImage = new Image();
         translateImage.source = new UIBrush(this.translate);
         const translateImageLayout = canvas.addChild(translateImage);
-        translateImageLayout.anchors = Anchors.CENTER_CENTER;
-        translateImageLayout.offsets = new Thickness(0, 0, this.translate.width / 2, this.translate.height / 2);
+        translateImageLayout.anchors = new Anchors(0.25, 0.75, 0.25, 0.75);
+        translateImageLayout.useAutoSize = true;
         translateImageLayout.pivot = new Vec2(0.5, 0.5);
-        translateImage.renderTransform.translation = new Vec3(-600, 200, 0);
 
         const rotateImage = this._rotateImage = new Image();
         rotateImage.source = new UIBrush(this.rotation);
         const rotateLayout = canvas.addChild(rotateImage);
-        rotateLayout.anchors = Anchors.CENTER_CENTER;
-        rotateLayout.offsets = new Thickness(0, 0, this.rotation.width / 2, this.rotation.height / 2);
+        rotateLayout.anchors = new Anchors(0.25, 0.25, 0.25, 0.25);
+        rotateLayout.useAutoSize = true;
         rotateLayout.pivot = new Vec2(0.5, 0.5);
-        rotateImage.renderTransform.translation = new Vec3(-600, -100, 0);
 
         const rotateImage2 = this._rotateImage2 = new Image();
         rotateImage2.source = new UIBrush(this.rotation);
         const rotateLayout2 = canvas.addChild(rotateImage2);
-        rotateLayout2.anchors = Anchors.CENTER_CENTER;
-        rotateLayout2.offsets = new Thickness(0, 0, this.rotation.width / 2, this.rotation.height / 2);
+        rotateLayout2.anchors = new Anchors(0.25, 0.50, 0.25, 0.50);
+        rotateLayout2.useAutoSize = true;
         rotateLayout2.pivot = new Vec2(0.5, 0.5);
-        rotateImage2.renderTransform.translation = new Vec3(-600, -400, 0);
 
         const scaleImage = this._scaleImage = new Image();
         scaleImage.source = new UIBrush(this.scale);
         const scaleImageLayout = canvas.addChild(scaleImage);
-        scaleImageLayout.anchors = Anchors.CENTER_CENTER;
-        scaleImageLayout.offsets = new Thickness(0, 0, this.scale.width / 2, this.scale.height / 2);
+        scaleImageLayout.anchors = new Anchors(0.75, 0.33, 0.75, 0.33);
+        scaleImageLayout.useAutoSize = true;
         scaleImageLayout.pivot = new Vec2(0.5, 0.5);
-        scaleImage.renderTransform.translation = new Vec3(600, -200, 0);
 
         const shearImage = this._shearImage = new Image();
         shearImage.source = new UIBrush(this.shear);
         const shearImageLayout = canvas.addChild(shearImage);
-        shearImageLayout.anchors = Anchors.CENTER_CENTER;
-        shearImageLayout.offsets = new Thickness(0, 0, this.shear.width / 2, this.shear.height / 2);
+        shearImageLayout.anchors = new Anchors(0.75, 0.66, 0.75, 0.66);
+        shearImageLayout.useAutoSize = true;
         shearImageLayout.pivot = new Vec2(0.5, 0.5);
-        shearImage.renderTransform.translation = new Vec3(600, 200, 0);
-
     }
 
     update(deltaTime: number) {
         const translation = this._translateImage.renderTransform.translation;
-        const xSpeed = this._xSpeed = ((translation.x > -400 || translation.x < -600) ? -1 : 1) * this._xSpeed;
-        const ySpeed = this._ySpeed = ((translation.y > 300 || translation.y < 100) ? -1 : 1) * this._ySpeed;
+        const xSpeed = this._xSpeed = ((translation.x > 100 || translation.x < -100) ? -1 : 1) * this._xSpeed;
+        const ySpeed = this._ySpeed = ((translation.y > 100 || translation.y < -100) ? -1 : 1) * this._ySpeed;
         this._translateImage.renderTransform.translation = new Vec3((translation.x + xSpeed), translation.y + ySpeed, translation.z);
         const eulerAngles = this._rotateImage.renderTransform.eulerAngles;
         this._rotateImage.renderTransform.eulerAngles = new Vec3(eulerAngles.x, eulerAngles.y + 1, eulerAngles.z);

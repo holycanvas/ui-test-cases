@@ -168,6 +168,22 @@
     },
     "_enabled": true,
     "__prefab": null,
+    "background": {
+      "__uuid__": "5c51ec09-a9fc-4747-a9f2-4f53b8e9d9fa@6c48a",
+      "__expectedType__": "cc.Texture2D"
+    },
+    "rectTexture": {
+      "__uuid__": "ecbaaa82-eb79-4582-a1e6-423f7d696f5b@6c48a",
+      "__expectedType__": "cc.Texture2D"
+    },
+    "contentTexture": {
+      "__uuid__": "4718c593-5368-4fa1-bd87-99495e3742a2@6c48a",
+      "__expectedType__": "cc.Texture2D"
+    },
+    "bannerTexture": {
+      "__uuid__": "de42000a-e7c7-4063-b713-805a935c45fe@6c48a",
+      "__expectedType__": "cc.Texture2D"
+    },
     "_id": "fbTLk9Z7ZKZaFeC7a7svqZ"
   },
   {

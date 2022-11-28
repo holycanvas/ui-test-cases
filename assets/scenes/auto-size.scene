@@ -10,7 +10,7 @@
   },
   {
     "__type__": "cc.Scene",
-    "_name": "canvas",
+    "_name": "auto-size",
     "_objFlags": 0,
     "_parent": null,
     "_children": [
@@ -28,11 +28,11 @@
     "_globals": {
       "__id__": 6
     },
-    "_id": "ba134fc6-f0b7-4671-b25d-3b3a9d1367e2"
+    "_id": "6f366012-3f38-4d92-925b-11f4a9e21f66"
   },
   {
     "__type__": "cc.Node",
-    "_name": "ui",
+    "_name": "Main Camera",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
@@ -47,16 +47,16 @@
     "_prefab": null,
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
+      "x": -10,
+      "y": 10,
+      "z": 10
     },
     "_lrot": {
       "__type__": "cc.Quat",
-      "x": 0,
-      "y": 0,
-      "z": 0,
-      "w": 1
+      "x": -0.27781593346944056,
+      "y": -0.36497167621709875,
+      "z": -0.11507512748638377,
+      "w": 0.8811195706053617
     },
     "_lscale": {
       "__type__": "cc.Vec3",
@@ -67,14 +67,14 @@
     "_layer": 1073741824,
     "_euler": {
       "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
+      "x": -35,
+      "y": -45,
       "z": 0
     },
-    "_id": "02l5yvSq9EH7A3ZjdBVPRX"
+    "_id": "c9DMICJLFO5IeO07EPon7U"
   },
   {
-    "__type__": "bdc277D89tB24jS5/ROI32f",
+    "__type__": "cc.Camera",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -82,23 +82,43 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "stretch": {
-      "__uuid__": "de42000a-e7c7-4063-b713-805a935c45fe@6c48a",
-      "__expectedType__": "cc.Texture2D"
+    "_projection": 1,
+    "_priority": 0,
+    "_fov": 45,
+    "_fovAxis": 0,
+    "_orthoHeight": 10,
+    "_near": 1,
+    "_far": 1000,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 51,
+      "g": 51,
+      "b": 51,
+      "a": 255
     },
-    "background": {
-      "__uuid__": "5c51ec09-a9fc-4747-a9f2-4f53b8e9d9fa@6c48a",
-      "__expectedType__": "cc.Texture2D"
+    "_depth": 1,
+    "_stencil": 0,
+    "_clearFlags": 14,
+    "_rect": {
+      "__type__": "cc.Rect",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
     },
-    "positioning": {
-      "__uuid__": "4718c593-5368-4fa1-bd87-99495e3742a2@6c48a",
-      "__expectedType__": "cc.Texture2D"
-    },
-    "_id": "f68N0l5adBHZIH74WYryWF"
+    "_aperture": 19,
+    "_shutter": 7,
+    "_iso": 0,
+    "_screenScale": 1,
+    "_visibility": 1822425087,
+    "_targetTexture": null,
+    "_cameraType": -1,
+    "_trackingType": 0,
+    "_id": "7dWQTpwS5LrIHnc1zAPUtf"
   },
   {
     "__type__": "cc.Node",
-    "_name": "Camera",
+    "_name": "Node",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
@@ -137,50 +157,30 @@
       "y": 0,
       "z": 0
     },
-    "_id": "1eUw1lfTRGLqtK54kaiR8d"
+    "_id": "02lg5w8AJFkoSqZ5TxKBKY"
   },
   {
-    "__type__": "cc.Camera",
-    "_name": "Camera<CameraComponent>",
+    "__type__": "24c40uG9ZFMF5kQYiu+1fT5",
+    "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 4
     },
     "_enabled": true,
     "__prefab": null,
-    "_projection": 1,
-    "_priority": 0,
-    "_fov": 45,
-    "_fovAxis": 0,
-    "_orthoHeight": 10,
-    "_near": 1,
-    "_far": 1000,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 51,
-      "g": 76,
-      "b": 120,
-      "a": 255
+    "background": {
+      "__uuid__": "300b1f69-c2cf-40a8-a15c-6b1f7b1d67f0@6c48a",
+      "__expectedType__": "cc.Texture2D"
     },
-    "_depth": 1,
-    "_stencil": 0,
-    "_clearFlags": 7,
-    "_rect": {
-      "__type__": "cc.Rect",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
+    "rectTexture": {
+      "__uuid__": "ecbaaa82-eb79-4582-a1e6-423f7d696f5b@6c48a",
+      "__expectedType__": "cc.Texture2D"
     },
-    "_aperture": 19,
-    "_shutter": 7,
-    "_iso": 0,
-    "_screenScale": 1,
-    "_visibility": 1822425087,
-    "_targetTexture": null,
-    "_cameraType": -1,
-    "_trackingType": 0,
-    "_id": "1dvlGB+PVEWonDAFtw/6MN"
+    "item": {
+      "__uuid__": "4f4e03f1-31f0-4f93-8540-c0c3cbb318c5@6c48a",
+      "__expectedType__": "cc.Texture2D"
+    },
+    "_id": "873f09cC9K27MEMhqoXTUa"
   },
   {
     "__type__": "cc.SceneGlobals",

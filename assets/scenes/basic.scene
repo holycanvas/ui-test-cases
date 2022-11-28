@@ -170,46 +170,49 @@
     "_enabled": true,
     "__prefab": null,
     "leftBottomTexture": {
-      "__uuid__": "c99e141b-f14f-4020-abb3-1333fbf3282d@6c48a",
+      "__uuid__": "a225806c-92ff-46a8-8351-9ed74c02695f@6c48a",
       "__expectedType__": "cc.Texture2D"
     },
     "leftTexture": {
-      "__uuid__": "c99e141b-f14f-4020-abb3-1333fbf3282d@6c48a",
+      "__uuid__": "d186140e-5277-4c4f-ac3a-3ff68b643bee@6c48a",
       "__expectedType__": "cc.Texture2D"
     },
     "leftTopTexture": {
-      "__uuid__": "c99e141b-f14f-4020-abb3-1333fbf3282d@6c48a",
+      "__uuid__": "b80bd6da-bc4a-402f-9024-4df5b4af5f2e@6c48a",
       "__expectedType__": "cc.Texture2D"
     },
     "topTexture": {
-      "__uuid__": "c99e141b-f14f-4020-abb3-1333fbf3282d@6c48a",
+      "__uuid__": "e3899590-f5e4-4287-ba49-89d0b5edbff5@6c48a",
       "__expectedType__": "cc.Texture2D"
     },
     "rightTopTexture": {
-      "__uuid__": "c99e141b-f14f-4020-abb3-1333fbf3282d@6c48a",
+      "__uuid__": "fdfa5dbd-c2db-462c-9cd7-49488c845549@6c48a",
       "__expectedType__": "cc.Texture2D"
     },
     "rightTexture": {
-      "__uuid__": "c99e141b-f14f-4020-abb3-1333fbf3282d@6c48a",
+      "__uuid__": "76241428-905c-4e70-ad62-eaf5aa8646fd@6c48a",
       "__expectedType__": "cc.Texture2D"
     },
     "rightBottomTexture": {
-      "__uuid__": "c99e141b-f14f-4020-abb3-1333fbf3282d@6c48a",
+      "__uuid__": "b5706377-cd58-49dc-adb9-77cd5f34504c@6c48a",
       "__expectedType__": "cc.Texture2D"
     },
     "bottomTexture": {
-      "__uuid__": "c99e141b-f14f-4020-abb3-1333fbf3282d@6c48a",
+      "__uuid__": "728e4d58-2f9b-4292-baad-ff958eabeee4@6c48a",
       "__expectedType__": "cc.Texture2D"
     },
     "centerTexture": {
-      "__uuid__": "c99e141b-f14f-4020-abb3-1333fbf3282d@6c48a",
+      "__uuid__": "781eda2c-e6da-4dec-b362-909d7eda9a62@6c48a",
       "__expectedType__": "cc.Texture2D"
     },
     "backgroundTexture": {
       "__uuid__": "5c51ec09-a9fc-4747-a9f2-4f53b8e9d9fa@6c48a",
       "__expectedType__": "cc.Texture2D"
     },
-    "buttonTexture": null,
+    "buttonTexture": {
+      "__uuid__": "c99e141b-f14f-4020-abb3-1333fbf3282d@6c48a",
+      "__expectedType__": "cc.Texture2D"
+    },
     "_id": "13UkAwkt1CMpHtWZsyobv3"
   },
   {
