@@ -10,7 +10,7 @@
   },
   {
     "__type__": "cc.Scene",
-    "_name": "basic",
+    "_name": "canvas",
     "_objFlags": 0,
     "_parent": null,
     "_children": [
@@ -28,13 +28,12 @@
     "_globals": {
       "__id__": 6
     },
-    "_id": "5dceb080-de1c-4958-8388-2ca126d40461"
+    "_id": "ba134fc6-f0b7-4671-b25d-3b3a9d1367e2"
   },
   {
     "__type__": "cc.Node",
-    "_name": "Camera",
+    "_name": "ui",
     "_objFlags": 0,
-    "__editorExtras__": {},
     "_parent": {
       "__id__": 1
     },
@@ -72,54 +71,31 @@
       "y": 0,
       "z": 0
     },
-    "_id": "75/CelN55AZLi6r64m+HD6"
+    "_id": "02l5yvSq9EH7A3ZjdBVPRX"
   },
   {
-    "__type__": "cc.Camera",
-    "_name": "Camera<CameraComponent>",
+    "__type__": "bdc277D89tB24jS5/ROI32f",
+    "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 2
     },
     "_enabled": true,
     "__prefab": null,
-    "_projection": 0,
-    "_priority": 0,
-    "_fov": 45,
-    "_fovAxis": 0,
-    "_orthoHeight": 10,
-    "_near": 0,
-    "_far": 1000,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 51,
-      "g": 76,
-      "b": 120,
-      "a": 255
+    "stretch": {
+      "__uuid__": "5e394a65-5bb4-4f0a-83f8-cfc4ad411440@6c48a",
+      "__expectedType__": "cc.Texture2D"
     },
-    "_depth": 1,
-    "_stencil": 0,
-    "_clearFlags": 7,
-    "_rect": {
-      "__type__": "cc.Rect",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
+    "positioning": {
+      "__uuid__": "3799cbe1-f5c1-4e87-91f2-4623b745cbed@6c48a",
+      "__expectedType__": "cc.Texture2D"
     },
-    "_aperture": 19,
-    "_shutter": 7,
-    "_iso": 0,
-    "_screenScale": 1,
-    "_visibility": 1108344832,
-    "_targetTexture": null,
-    "_cameraType": -1,
-    "_trackingType": 0,
-    "_id": "10ai/bjClDgKnTNp5NR7Pl"
+    "pivot": null,
+    "_id": "f68N0l5adBHZIH74WYryWF"
   },
   {
     "__type__": "cc.Node",
-    "_name": "ui",
+    "_name": "Camera",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
@@ -158,58 +134,50 @@
       "y": 0,
       "z": 0
     },
-    "_id": "b2W5xf2zhN3YLDyVEIk5u2"
+    "_id": "1eUw1lfTRGLqtK54kaiR8d"
   },
   {
-    "__type__": "0f80cWBynlJWJziNYa6Bjdd",
-    "_name": "",
+    "__type__": "cc.Camera",
+    "_name": "Camera<CameraComponent>",
     "_objFlags": 0,
     "node": {
       "__id__": 4
     },
     "_enabled": true,
     "__prefab": null,
-    "leftBottomTexture": {
-      "__uuid__": "a225806c-92ff-46a8-8351-9ed74c02695f@6c48a",
-      "__expectedType__": "cc.Texture2D"
+    "_projection": 1,
+    "_priority": 0,
+    "_fov": 45,
+    "_fovAxis": 0,
+    "_orthoHeight": 10,
+    "_near": 1,
+    "_far": 1000,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 51,
+      "g": 76,
+      "b": 120,
+      "a": 255
     },
-    "leftTexture": {
-      "__uuid__": "d186140e-5277-4c4f-ac3a-3ff68b643bee@6c48a",
-      "__expectedType__": "cc.Texture2D"
+    "_depth": 1,
+    "_stencil": 0,
+    "_clearFlags": 7,
+    "_rect": {
+      "__type__": "cc.Rect",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
     },
-    "leftTopTexture": {
-      "__uuid__": "b80bd6da-bc4a-402f-9024-4df5b4af5f2e@6c48a",
-      "__expectedType__": "cc.Texture2D"
-    },
-    "topTexture": {
-      "__uuid__": "e3899590-f5e4-4287-ba49-89d0b5edbff5@6c48a",
-      "__expectedType__": "cc.Texture2D"
-    },
-    "rightTopTexture": {
-      "__uuid__": "fdfa5dbd-c2db-462c-9cd7-49488c845549@6c48a",
-      "__expectedType__": "cc.Texture2D"
-    },
-    "rightTexture": {
-      "__uuid__": "76241428-905c-4e70-ad62-eaf5aa8646fd@6c48a",
-      "__expectedType__": "cc.Texture2D"
-    },
-    "rightBottomTexture": {
-      "__uuid__": "b5706377-cd58-49dc-adb9-77cd5f34504c@6c48a",
-      "__expectedType__": "cc.Texture2D"
-    },
-    "bottomTexture": {
-      "__uuid__": "728e4d58-2f9b-4292-baad-ff958eabeee4@6c48a",
-      "__expectedType__": "cc.Texture2D"
-    },
-    "centerTexture": {
-      "__uuid__": "781eda2c-e6da-4dec-b362-909d7eda9a62@6c48a",
-      "__expectedType__": "cc.Texture2D"
-    },
-    "backgroundTexture": {
-      "__uuid__": "b078aba9-2b6b-49c3-bc87-2e1335086cd5@6c48a",
-      "__expectedType__": "cc.Texture2D"
-    },
-    "_id": "13UkAwkt1CMpHtWZsyobv3"
+    "_aperture": 19,
+    "_shutter": 7,
+    "_iso": 0,
+    "_screenScale": 1,
+    "_visibility": 1822425087,
+    "_targetTexture": null,
+    "_cameraType": -1,
+    "_trackingType": 0,
+    "_id": "1dvlGB+PVEWonDAFtw/6MN"
   },
   {
     "__type__": "cc.SceneGlobals",
@@ -233,48 +201,48 @@
     "__type__": "cc.AmbientInfo",
     "_skyColorHDR": {
       "__type__": "cc.Vec4",
-      "x": 0,
-      "y": 0,
-      "z": 0,
+      "x": 0.2,
+      "y": 0.5,
+      "z": 0.8,
       "w": 0.520833125
     },
     "_skyColor": {
       "__type__": "cc.Vec4",
-      "x": 0,
-      "y": 0,
-      "z": 0,
+      "x": 0.2,
+      "y": 0.5,
+      "z": 0.8,
       "w": 0.520833125
     },
     "_skyIllumHDR": 20000,
     "_skyIllum": 20000,
     "_groundAlbedoHDR": {
       "__type__": "cc.Vec4",
-      "x": 0,
-      "y": 0,
-      "z": 0,
-      "w": 0
-    },
-    "_groundAlbedo": {
-      "__type__": "cc.Vec4",
-      "x": 0,
-      "y": 0,
-      "z": 0,
-      "w": 0
-    },
-    "_skyColorLDR": {
-      "__type__": "cc.Vec4",
       "x": 0.2,
-      "y": 0.5,
-      "z": 0.8,
+      "y": 0.2,
+      "z": 0.2,
       "w": 1
     },
-    "_skyIllumLDR": 20000,
-    "_groundAlbedoLDR": {
+    "_groundAlbedo": {
       "__type__": "cc.Vec4",
       "x": 0.2,
       "y": 0.2,
       "z": 0.2,
       "w": 1
+    },
+    "_skyColorLDR": {
+      "__type__": "cc.Vec4",
+      "x": 0.36244,
+      "y": 0.486029,
+      "z": 0.632565,
+      "w": 0.5208
+    },
+    "_skyIllumLDR": 0.5208,
+    "_groundAlbedoLDR": {
+      "__type__": "cc.Vec4",
+      "x": 0.437391,
+      "y": 0.436011,
+      "z": 0.436589,
+      "w": 0
     }
   },
   {
@@ -298,8 +266,8 @@
     "_maxReceived": 4,
     "_size": {
       "__type__": "cc.Vec2",
-      "x": 512,
-      "y": 512
+      "x": 1024,
+      "y": 1024
     }
   },
   {
@@ -311,7 +279,7 @@
     "_diffuseMapHDR": null,
     "_diffuseMapLDR": null,
     "_enabled": false,
-    "_useHDR": true,
+    "_useHDR": false,
     "_editableMaterial": null,
     "_reflectionHDR": null,
     "_reflectionLDR": null,

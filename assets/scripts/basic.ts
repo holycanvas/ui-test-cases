@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, Color, UIDocument, UICanvas, HorizontalAlignment, VerticalAlignment, Image, UIBrush, Texture2D, Anchors, Thickness, Vec2, UISystem } from 'cc';
+import { _decorator, Component, Node, Color, UIDocument, UICanvas, HorizontalAlignment, VerticalAlignment, Image, UIBrush, Texture2D, Anchors, Thickness, Vec2, UISystem, Vec3 } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('basic')
@@ -42,6 +42,13 @@ export class basic extends Component {
         const canvasLayout = document.window.addChild(canvas);
         canvasLayout.horizontalAlignment = HorizontalAlignment.STRETCH;
         canvasLayout.verticalAlignment = VerticalAlignment.STRETCH;
+
+        const background = new Image();
+        background.source = new UIBrush(this.backgroundTexture);
+        const backgroundLayout = canvas.addChild(background);
+        backgroundLayout.anchors = Anchors.BOTH_STRETCH;
+        backgroundLayout.offsets = new Thickness;
+        backgroundLayout.pivot = new Vec2(0.5, 0.5);
 
         const leftTopImage = new Image();
         leftTopImage.source = new UIBrush(this.leftTopTexture);
