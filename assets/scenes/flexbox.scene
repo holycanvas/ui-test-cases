@@ -91,9 +91,9 @@
     "_far": 1000,
     "_color": {
       "__type__": "cc.Color",
-      "r": 108,
-      "g": 145,
-      "b": 241,
+      "r": 76,
+      "g": 100,
+      "b": 162,
       "a": 255
     },
     "_depth": 1,
@@ -168,6 +168,36 @@
     },
     "_enabled": true,
     "__prefab": null,
+    "background": {
+      "__uuid__": "300b1f69-c2cf-40a8-a15c-6b1f7b1d67f0@6c48a",
+      "__expectedType__": "cc.Texture2D"
+    },
+    "items": [
+      {
+        "__uuid__": "6b1c93db-2320-4f9c-a3ee-3a67bb88f161@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      {
+        "__uuid__": "2ccbf417-2d62-4a1d-9107-630f5badbcb6@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      {
+        "__uuid__": "4f4e03f1-31f0-4f93-8540-c0c3cbb318c5@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      {
+        "__uuid__": "2ccbf417-2d62-4a1d-9107-630f5badbcb6@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      {
+        "__uuid__": "4f4e03f1-31f0-4f93-8540-c0c3cbb318c5@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      {
+        "__uuid__": "2ccbf417-2d62-4a1d-9107-630f5badbcb6@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      }
+    ],
     "_id": "8fUaW88jpM9abzHNqO3xzW"
   },
   {
