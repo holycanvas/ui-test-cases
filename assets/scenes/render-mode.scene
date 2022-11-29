@@ -32,10 +32,12 @@
     ],
     "_active": true,
     "_components": [],
-    "_prefab": null,
+    "_prefab": {
+      "__id__": 17
+    },
     "autoReleaseAssets": false,
     "_globals": {
-      "__id__": 17
+      "__id__": 18
     },
     "_id": "8d79df22-eb1e-4927-b45c-8b50e6d62308"
   },
@@ -273,7 +275,7 @@
     "__prefab": null,
     "_materials": [
       {
-        "__uuid__": "d3c7820c-2a98-4429-8bc7-b8453bc9ac41",
+        "__uuid__": "9a2928e3-e474-4033-a71e-1ef8d38a05e0",
         "__expectedType__": "cc.Material"
       }
     ],
@@ -376,7 +378,7 @@
     "__prefab": null,
     "_materials": [
       {
-        "__uuid__": "d3c7820c-2a98-4429-8bc7-b8453bc9ac41",
+        "__uuid__": "9a2928e3-e474-4033-a71e-1ef8d38a05e0",
         "__expectedType__": "cc.Material"
       }
     ],
@@ -475,63 +477,109 @@
     "_enabled": true,
     "__prefab": null,
     "worldSpaceTexture": {
-      "__uuid__": "3557ae64-b8aa-492a-a399-a38a94f51142@6c48a",
+      "__uuid__": "5c51ec09-a9fc-4747-a9f2-4f53b8e9d9fa@6c48a",
       "__expectedType__": "cc.Texture2D"
     },
     "screenSpaceTexture": {
-      "__uuid__": "aa073ad3-3dc0-4332-83ab-cb6721f73fc2@6c48a",
+      "__uuid__": "300b1f69-c2cf-40a8-a15c-6b1f7b1d67f0@6c48a",
       "__expectedType__": "cc.Texture2D"
     },
+    "rectTexture": {
+      "__uuid__": "ecbaaa82-eb79-4582-a1e6-423f7d696f5b@6c48a",
+      "__expectedType__": "cc.Texture2D"
+    },
+    "items": [
+      {
+        "__uuid__": "2ccbf417-2d62-4a1d-9107-630f5badbcb6@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      {
+        "__uuid__": "4f4e03f1-31f0-4f93-8540-c0c3cbb318c5@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      {
+        "__uuid__": "6b1c93db-2320-4f9c-a3ee-3a67bb88f161@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      {
+        "__uuid__": "2ccbf417-2d62-4a1d-9107-630f5badbcb6@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      {
+        "__uuid__": "4f4e03f1-31f0-4f93-8540-c0c3cbb318c5@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      {
+        "__uuid__": "4f4e03f1-31f0-4f93-8540-c0c3cbb318c5@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      {
+        "__uuid__": "4f4e03f1-31f0-4f93-8540-c0c3cbb318c5@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      {
+        "__uuid__": "2ccbf417-2d62-4a1d-9107-630f5badbcb6@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      {
+        "__uuid__": "6b1c93db-2320-4f9c-a3ee-3a67bb88f161@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      }
+    ],
     "_id": "feQr/NkTdObYeMgLceWUbC"
+  },
+  {
+    "__type__": "cc.PrefabInfo",
+    "fileId": "8d79df22-eb1e-4927-b45c-8b50e6d62308"
   },
   {
     "__type__": "cc.SceneGlobals",
     "ambient": {
-      "__id__": 18
-    },
-    "shadows": {
       "__id__": 19
     },
-    "_skybox": {
+    "shadows": {
       "__id__": 20
     },
-    "fog": {
+    "_skybox": {
       "__id__": 21
     },
-    "octree": {
+    "fog": {
       "__id__": 22
+    },
+    "octree": {
+      "__id__": 23
     }
   },
   {
     "__type__": "cc.AmbientInfo",
     "_skyColorHDR": {
       "__type__": "cc.Vec4",
-      "x": 0.4980392156862745,
-      "y": 0.7137254901960784,
-      "z": 0.9921568627450981,
+      "x": 0.21465,
+      "y": 0.34977,
+      "z": 0.576641,
       "w": 0.520833125
     },
     "_skyColor": {
       "__type__": "cc.Vec4",
-      "x": 0.4980392156862745,
-      "y": 0.7137254901960784,
-      "z": 0.9921568627450981,
+      "x": 0.21465,
+      "y": 0.34977,
+      "z": 0.576641,
       "w": 0.520833125
     },
     "_skyIllumHDR": 20000,
     "_skyIllum": 20000,
     "_groundAlbedoHDR": {
       "__type__": "cc.Vec4",
-      "x": 0,
-      "y": 0,
-      "z": 0,
+      "x": 0.245603,
+      "y": 0.246646,
+      "z": 0.251197,
       "w": 0
     },
     "_groundAlbedo": {
       "__type__": "cc.Vec4",
-      "x": 0,
-      "y": 0,
-      "z": 0,
+      "x": 0.245603,
+      "y": 0.246646,
+      "z": 0.251197,
       "w": 0
     },
     "_skyColorLDR": {
