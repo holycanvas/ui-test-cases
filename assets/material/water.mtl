@@ -1,0 +1,52 @@
+{
+  "__type__": "cc.Material",
+  "_name": "",
+  "_objFlags": 0,
+  "_native": "",
+  "_effectAsset": {
+    "__uuid__": "e2364a69-2b68-40c8-8ff0-ca5be828657f",
+    "__expectedType__": "cc.EffectAsset"
+  },
+  "_techIdx": 0,
+  "_defines": [
+    {
+      "USE_TILING": true,
+      "USE_WAVE": true
+    }
+  ],
+  "_states": [
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    }
+  ],
+  "_props": [
+    {
+      "mainTexture": {
+        "__uuid__": "45bed234-7f74-4e0a-a274-76be5bcd5a90@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "tiling": {
+        "__type__": "cc.Vec2",
+        "x": 1,
+        "y": 1
+      },
+      "waveTexture": {
+        "__uuid__": "c49b3b8f-e3e8-46e7-abee-bc075fa9e61b@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "waveDirection": {
+        "__type__": "cc.Vec2",
+        "x": 0.6,
+        "y": 0.3
+      },
+      "waveSpeed": 0.6,
+      "waveStrenth": 0.18
+    }
+  ]
+}
