@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, Texture2D, Material, Vec4, UIDocument, UISystem, UniformGrid, Image, UIBrush, HorizontalAlignment, VerticalAlignment, Thickness } from 'cc';
+import { _decorator, Component, Node, Texture2D, Material, Vec4, UIDocument, UISystem, UniformGrid, Image, UIBrush, HorizontalAlignment, VerticalAlignment, Thickness, Color } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('brush')
@@ -10,18 +10,10 @@ export class brush extends Component {
     @property
     public batch = false;
 
-    @property
-    public startTime = 1;
-    @property
-    public intervalTime = 1;
     @property({
         type: Material
     })
     public material : Material = null!;
-
-    change : boolean = false;
-
-    color = new Vec4(1, 1, 1, 1);
 
     start() {
         const document = new UIDocument();
@@ -45,6 +37,7 @@ export class brush extends Component {
                     brush = imageIndex === 0 ? new UIBrush() : imageIndex === 1 ? new UIBrush(this.texture) : new UIBrush(this.material); 
                 }
                 image.source = brush;
+                // image.tintColor = new Color(176, 94, 172, 255);
                 const imageLayout = uniformGrid.addChild(image);
                 imageLayout.horizontalAlignment = HorizontalAlignment.STRETCH;
                 imageLayout.verticalAlignment = VerticalAlignment.STRETCH;
@@ -52,22 +45,10 @@ export class brush extends Component {
                 imageLayout.row = j;
             }
         }
-
-        this.schedule(this.changeUni, this.intervalTime, 1000, this.startTime);
     }
 
     update(deltaTime: number) {
         
-    }
-
-    changeUni () {
-        if (this.change) {
-            this.color.set(1,0,0,1);
-        } else {
-            this.color.set(1,1,1,1);
-        }
-        this.material.setProperty('mainColor',this.color);
-        this.change = !this.change;
     }
 }
 

@@ -173,10 +173,8 @@
       "__expectedType__": "cc.Texture2D"
     },
     "batch": false,
-    "startTime": 2,
-    "intervalTime": 2,
     "material": {
-      "__uuid__": "f0548a1d-9d45-4c36-af56-864d7f4cbd31",
+      "__uuid__": "3bcafcb1-d331-4aa7-af49-888faa140b71",
       "__expectedType__": "cc.Material"
     },
     "_id": "72cHpE/tNLGKwxG8jclqjd"
