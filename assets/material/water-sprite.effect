@@ -5,7 +5,7 @@ CCEffect %{
     - vert: sprite-vs:vert
       frag: sprite-fs:frag
       depthStencilState:
-        depthTest: false
+        depthTest: true
         depthWrite: false
       blendState:
         targets:

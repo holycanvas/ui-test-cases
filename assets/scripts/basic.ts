@@ -56,6 +56,7 @@ export class basic extends Component {
         leftTop.background = new UIBrush(this.buttonTexture);
         const leftTopLayout = canvas.addChild(leftTop);
         leftTopLayout.anchors = Anchors.TOP_LEFT;
+        leftTopLayout.pivot = new Vec2(0, 0);
         leftTopLayout.useAutoSize = true;
 
         const leftTopImage = new Image();
