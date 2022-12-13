@@ -1,4 +1,4 @@
-import { _decorator, Node, SpriteFrame, Vec3, Component, UIImage, UIBrush, CCInteger, Sprite, Layers, CCBoolean } from "cc";
+import { _decorator, Node, SpriteFrame, Vec3, Component, UIImage, UIBrush, CCInteger, Sprite, Layers, CCBoolean, UIWidget, Widget } from "cc";
 const { ccclass, property } = _decorator;
 
 class BunnyMarkData {
@@ -53,6 +53,7 @@ export class TestSprite extends Component {
             bunny = new Node();
             bunny.layer = Layers.Enum.UI_2D;
             bunnySprite = bunny.addComponent(Sprite);
+            bunny.addComponent(Widget);
             bunnySprite.spriteFrame = this.frames[this.currentFrame];
             const data = new BunnyMarkData();
             data.speedX = Math.random() * 10;
